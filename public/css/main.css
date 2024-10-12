@@ -1,0 +1,93 @@
+body {
+    font-family: monospace;
+    max-width: 900px;
+    padding: 0 2%;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #CCCCCC;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logo pre {
+    font-size: 14px;
+    line-height: 1;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.toolbar {
+    background-color: #333333;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toolbar a {
+    color: #CCCCCC;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.toolbar a:hover {
+    color: #FFFFFF;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 10px;
+}
+
+.post-date {
+    display: inline-block;
+    width: 100px;
+    color: #888888;
+}
+
+.post-images {
+    margin-bottom: 20px;
+}
+
+.post-images figure {
+    margin-bottom: 15px;
+}
+
+.post-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-images figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
