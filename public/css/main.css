@@ -16,28 +16,37 @@ body {
     width: 100%;
     overflow-x: auto;
     margin-bottom: 1rem;
-  }
-  
-  .ascii-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.ascii-logo {
     font-family: monospace;
-    font-size: 0.6vw; /* Adjust this value as needed */
+    font-size: 10px; /* Base size for larger screens */
     line-height: 1.2;
     white-space: pre;
     text-align: center;
     margin: 0;
-  }
-  
-  @media (max-width: 768px) {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
     .ascii-logo {
-      font-size: 1.5vw; /* Larger font size for mobile */
+        font-size: 8px; /* Adjusted size for tablets */
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .ascii-logo {
-      font-size: 2vw; /* Even larger for very small screens */
+        font-size: 6px; /* Adjusted size for mobile phones */
     }
-  }
+}
 
 .logo {
     text-decoration: none;
@@ -117,4 +126,25 @@ a:hover {
     font-style: italic;
     color: #666;
     margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 4%;
+    }
+
+    .toolbar {
+        padding: 8px 0;
+    }
+
+    .toolbar a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .post-date {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
