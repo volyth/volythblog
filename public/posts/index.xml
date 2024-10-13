@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Volyth</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:1313/volythblog/posts/</link>
     <description>Recent content in Posts on Volyth</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/volythblog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/first-post/</link>
+      <link>http://localhost:1313/volythblog/posts/first-post/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
+      <guid>http://localhost:1313/volythblog/posts/first-post/</guid>
       <description>&lt;p&gt;This is your first blog post. You can write your content here using Markdown.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Second Post</title>
-      <link>http://localhost:1313/posts/second-post/</link>
+      <link>http://localhost:1313/volythblog/posts/second-post/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/second-post/</guid>
+      <guid>http://localhost:1313/volythblog/posts/second-post/</guid>
       <description>&lt;p&gt;This is your second blog post. You can write your content here using Markdown.&lt;/p&gt;</description>
     </item>
   </channel>
