@@ -30,6 +30,8 @@ body {
     white-space: pre;
     overflow-x: auto;
     max-width: 100%;
+    display: inline-block;
+    text-align: left;
 }
 
 .toolbar {
@@ -37,12 +39,15 @@ body {
     padding: 10px 0;
     text-align: center;
     margin-bottom: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .toolbar a {
     color: #CCCCCC;
     text-decoration: none;
     padding: 0 15px;
+    display: inline-block;
 }
 
 .toolbar a:hover {
@@ -118,7 +123,8 @@ a:hover {
 
 @media (max-width: 600px) {
     .logo pre {
-        font-size: 8px;
+        font-size: 7px;
+        letter-spacing: -0.5px;
     }
 
     .toolbar {
@@ -127,6 +133,5 @@ a:hover {
 
     .toolbar a {
         padding: 5px 10px;
-        display: inline-block;
     }
 }
