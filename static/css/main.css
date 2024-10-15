@@ -17,6 +17,7 @@ body {
     text-decoration: none;
     display: inline-block;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .logo:hover {
@@ -29,11 +30,11 @@ body {
     color: #FFFFFF;
     margin: 0;
     white-space: pre;
-    overflow: hidden;
-    max-width: 100%;
     display: inline-block;
     text-align: left;
-    transform-origin: center;
+    transform-origin: top left;
+    transform: scale(1);
+    transition: transform 0.3s ease;
 }
 
 .toolbar {
@@ -123,12 +124,17 @@ a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+    .logo pre {
+        font-size: 1.55vw;
+        transform: scale(1);
+    }
+}
+
 @media (max-width: 600px) {
     .logo pre {
-        font-size: 7px;
-        letter-spacing: -0.5px;
+        font-size: 1.55vw;
         transform: scale(0.9);
-        width: 111%; /* Compensate for scale */
     }
 
     .toolbar {
