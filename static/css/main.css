@@ -10,12 +10,13 @@ body {
 .header {
     text-align: center;
     padding: 20px 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .logo {
     text-decoration: none;
     display: inline-block;
+    max-width: 100%;
 }
 
 .logo:hover {
@@ -28,10 +29,11 @@ body {
     color: #FFFFFF;
     margin: 0;
     white-space: pre;
-    overflow-x: auto;
+    overflow: hidden;
     max-width: 100%;
     display: inline-block;
     text-align: left;
+    transform-origin: center;
 }
 
 .toolbar {
@@ -125,6 +127,8 @@ a:hover {
     .logo pre {
         font-size: 7px;
         letter-spacing: -0.5px;
+        transform: scale(0.9);
+        width: 111%; /* Compensate for scale */
     }
 
     .toolbar {
