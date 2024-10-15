@@ -91,3 +91,61 @@ a:hover {
     color: #666;
     margin-top: 5px;
 }
+
+/* Responsive additions */
+@media (max-width: 600px) {
+    .logo pre {
+        font-size: 10px;
+        overflow-x: auto;
+        white-space: pre;
+    }
+
+    .toolbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #CCCCCC;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .menu-items.active {
+        display: block;
+    }
+
+    .toolbar a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .footer {
+        margin-top: 40px;
+        padding: 20px 0;
+        background-color: #333333;
+        color: #CCCCCC;
+        text-align: center;
+    }
+    
+    .footer-content {
+        font-size: 14px;
+    }
+    
+    .footer a {
+        color: #4A90E2;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+}
