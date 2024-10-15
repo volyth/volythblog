@@ -126,15 +126,15 @@ a:hover {
 
 @media (max-width: 900px) {
     .logo pre {
-        font-size: 1.5vw;
-        transform: scale(0.9);
+        font-size: 1.8vw;
+        transform: scale(0.95);
     }
 }
 
 @media (max-width: 600px) {
     .logo pre {
-        font-size: 1.5vw;
-        transform: scale(0.7);
+        font-size: 2vw;
+        transform: scale(0.9);
     }
 
     .toolbar {
