@@ -6,8 +6,15 @@
     <description>Recent content on Volyth</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/volythblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rebuilding Hraal</title>
+      <link>http://localhost:1313/volythblog/posts/first-post/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/volythblog/posts/first-post/</guid>
+      <description>&lt;p&gt;Six years ago, barely knowing how to write a line of code, I decided my first game would be an isometric, procedurally generated RPG with a living, breathing world. No design doc. No plan. I just sat down and started building. This is what every game dev does—they think up some grand masterpiece like a gigantic open-world simulation with zero experience. Before this, I had read a book on C#. I don&amp;rsquo;t believe I finished it, but I was ready to make games.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/volythblog/about/</link>
@@ -21,20 +28,6 @@
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/volythblog/contact/</guid>
       <description>&lt;p&gt;Email: &lt;a href=&#34;mailto:games@volyth.net&#34;&gt;games@volyth.net&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/volythblog/posts/first-post/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/volythblog/posts/first-post/</guid>
-      <description>&lt;p&gt;This is your first blog post. You can write your content here using Markdown.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Second Post</title>
-      <link>http://localhost:1313/volythblog/posts/second-post/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/volythblog/posts/second-post/</guid>
-      <description>&lt;p&gt;This is your second blog post. You can write your content here using Markdown.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
