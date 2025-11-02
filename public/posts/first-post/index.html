@@ -31,13 +31,23 @@
     <main>
         
     <h1>Rebuilding Hraal</h1>
-    <p>Six years ago, barely knowing how to write a line of code, I decided my first game would be an isometric, procedurally generated RPG with a living, breathing world. No design doc. No plan. I just sat down and started building. This is what every game dev does—they think up some grand masterpiece like a gigantic open-world simulation with zero experience. Before this, I had read a book on C#. I don&rsquo;t believe I finished it, but I was ready to make games.</p>
+    <p>Six years ago, barely knowing how to write a line of code, I decided my first game would be an isometric, procedurally generated RPG with a living, breathing world. No design doc. No plan. I just sat down and started building. This is what every game dev does, they think up some grand masterpiece like a gigantic open-world simulation with zero experience. Before this, I had read a book on C#. I don&rsquo;t believe I finished it, but I was ready to make games.</p>
 <p>Enter Hraal. I sat down and figured out in my tiny brain how isometric movement would work, how tile placement works, the pain of dealing with layers when it comes to isometric art placement. I did crazy things like create giant lists of objects in memory that weren&rsquo;t efficient at all. You name all the bad things, I did them.</p>
-<p><img src="/assets/images/hraal-iteration-1.png" alt="Early tile-based movement system"></p>
-<p>Over the next couple of years, I&rsquo;d step away, come back, step away again. Slowly, I realized I wasn&rsquo;t making a game—I was accidentally building an engine. The codebase became a snapshot of my evolution as a programmer: from barely functional garbage to slightly less garbage code that somehow worked.</p>
+<figure><img src="https://github.com/volyth/volythblog/blob/main/assets/images/hraal-iteration-1.png?raw=true"
+    alt="An early version with placeholder art."><figcaption>
+      <p>An early version with placeholder art.</p>
+    </figcaption>
+</figure>
+
+<p>Over the next couple of years, I&rsquo;d step away, come back, step away again. Slowly, I realized I wasn&rsquo;t making a game, I was accidentally building an engine. The codebase became a snapshot of my evolution as a programmer: from barely functional garbage to slightly less garbage code that somehow worked.</p>
 <p>The final thing I added was a tile-based lighting system that ate up weeks of my life. After that, I walked away and never came back. I went on to mess with Godot, Unity, and other game engines and let the pile of unfinished games grow.</p>
-<p><img src="/assets/images/hraal-iteration-3.png" alt="Final version with lighting system"></p>
-<p>It&rsquo;s late 2025 now. Hraal—originally the game&rsquo;s working title—is now the name of my isometric engine. But I&rsquo;m not refactoring the old code. I&rsquo;m rebuilding it from scratch, using what I learned the first time around to do it right.</p>
+<figure><img src="https://github.com/volyth/volythblog/blob/main/assets/images/hraal-iteration-3.png?raw=true"
+    alt="Final version with tile-based lighting"><figcaption>
+      <p>Final version with tile-based lighting</p>
+    </figcaption>
+</figure>
+
+<p>It&rsquo;s late 2025 now. Hraal, originally the game&rsquo;s working title, is now the name of my isometric engine. But I&rsquo;m not refactoring the old code. I&rsquo;m rebuilding it from scratch, using what I learned the first time around to do it right.</p>
 <p><strong>What&rsquo;s Changing:</strong></p>
 <ul>
 <li>Starting fresh with .NET 9 / MonoGame 3.8.4.1</li>
@@ -45,7 +55,8 @@
 <li>Proper separation between engine and game logic</li>
 </ul>
 <p>This is me documenting that process.</p>
-<p>There will be a game (this is currently being planned—yes, actually planned). But the foundation starts now.</p>
+<p>There will be a game (this is currently being planned, yes, actually planned). But the foundation starts now.</p>
+<!-- raw HTML omitted -->
 
 
     </main>
