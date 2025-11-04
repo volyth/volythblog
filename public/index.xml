@@ -20,7 +20,7 @@
       <link>http://localhost:1313/volythblog/about/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/volythblog/about/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <description>&lt;div style=&#34;display: flex; align-items: center; gap: 2rem;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;https://github.com/volyth/volythblog/blob/main/assets/images/volythportrait.png?raw=true&#34; alt=&#34;Volyth&#34; style=&#34;width: 200px;&#34;&gt;&#xD;&#xA;  &lt;p&gt;I am Volyth - game developer / builder / hacker / artist.&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Contact</title>

@@ -1,3 +1,8 @@
 baseURL = "https://volyth.github.io/volythblog/"
 languageCode = "en-us"
 title = "Volyth"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
