@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/volythblog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=volythblog/livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hraal: Project Structure and Tiled Integration - Volyth</title>
+    <link rel="stylesheet" href="/volythblog/css/main.css">
+</head>
+<body>
+    <div class="header">
+    <a href="http://localhost:1313/volythblog/" class="logo">
+        <pre>                                                    
+@@@  @@@   @@@@@@   @@@       @@@ @@@  @@@@@@@  @@@  @@@  
+@@@  @@@  @@@@@@@@  @@@       @@@ @@@  @@@@@@@  @@@  @@@  
+@@!  @@@  @@!  @@@  @@!       @@! !@@    @@!    @@!  @@@  
+!@!  @!@  !@!  @!@  !@!       !@! @!!    !@!    !@!  @!@  
+@!@  !@!  @!@  !@!  @!!        !@!@!     @!!    @!@!@!@!  
+!@!  !!!  !@!  !!!  !!!         @!!!     !!!    !!!@!!!!  
+:!:  !!:  !!:  !!!  !!:         !!:      !!:    !!:  !!!  
+ ::!!:!   :!:  !:!   :!:        :!:      :!:    :!:  !:!  
+  ::::    ::::: ::   :: ::::     ::       ::    ::   :::  
+   :       : :  :   : :: : :     :        :      :   : :  
+                                                   
+        </pre>
+    </a>
+</div>
+    <div class="toolbar">
+    <a href="http://localhost:1313/volythblog/">Home</a>
+    <a href="http://localhost:1313/volythblog/about/">About</a>
+    <a href="http://localhost:1313/volythblog/contact/">Contact</a>
+</div>
+    <main>
+        
+    <h1>Hraal: Project Structure and Tiled Integration</h1>
+    <p>The rebuild begins. After setting up the foundation in the last post, I spent my first real development session getting the project structured and Tiled maps rendering. No more hardcoded level generation - we&rsquo;re doing this properly.</p>
+<p><strong>Project Structure</strong></p>
+<p>I kept it simple to start:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hraal/
+</span></span><span style="display:flex;"><span>├── Hraal.sln
+</span></span><span style="display:flex;"><span>├── Hraal.Engine/          # Class library - engine code
+</span></span><span style="display:flex;"><span>│   └── Hraal.Engine.csproj
+</span></span><span style="display:flex;"><span>└── Hraal.Game/            # MonoGame project - the actual game
+</span></span><span style="display:flex;"><span>    └── Hraal.Game.csproj
+</span></span></code></pre></div><p>The engine is just a .NET class library that references MonoGame as a NuGet package. The game project references the engine and runs the actual application. This separation is critical - it means engine systems stay independent of game logic. When I inevitably need to refactor how rendering works, I&rsquo;m not touching game code. When I&rsquo;m prototyping game mechanics, I&rsquo;m not accidentally breaking core engine systems.</p>
+<p>This is the opposite of what I did six years ago, where everything was tangled together in one giant mess.</p>
+<p><strong>The ECS Decision</strong></p>
+<p>I&rsquo;m planning to use an Entity Component System architecture for this engine, but I&rsquo;m not starting with it. ECS libraries like Arch or DefaultEcs will come later, once I understand what I actually need from the system.</p>
+<p>The old engine had massive lists of game objects with god-knows-how-many properties, most of which any given object didn&rsquo;t even use. ECS flips this - entities are just IDs, components are pure data, and systems operate on entities that have specific component combinations. It&rsquo;s more modular, more performant, and way easier to reason about.</p>
+<p>But building the ECS structure before I have anything to put in it would be premature. Right now, I need to see tiles and move a camera. The architecture can wait until I&rsquo;m actually creating entities that need managing.</p>
+<p><strong>Moving Away from Hardcoded Maps</strong></p>
+<p>The old engine had levels built in classes - procedurally generated chaos that became impossible to debug or iterate on. For the actual game I&rsquo;m building in this engine, I need handcrafted levels. Specific buildings to rob, specific layouts to learn during your day job so you can navigate them at night. This means Tiled integration was priority one.</p>
+<p><strong>Tiled Integration with MonoGame.Extended</strong></p>
+<p>Getting Tiled working was straightforward:</p>
+<ul>
+<li>Created a test isometric map (68x36 tile size, 10x10 grid)</li>
+<li>Added MonoGame.Extended and MonoGame.Extended.Tiled packages</li>
+<li>Loaded the map through MonoGame&rsquo;s Content Pipeline</li>
+<li>Set up a basic camera with WASD movement</li>
+</ul>
+<figure><img src="https://github.com/volyth/volythblog/blob/main/assets/images/newhraal.png?raw=true"
+    alt="First successful Tiled map render"><figcaption>
+      <p>First successful Tiled map render</p>
+    </figcaption>
+</figure>
+
+<p><strong>What&rsquo;s Next</strong></p>
+<p>Now that maps load and render, the next step is getting entities working - starting with a player character that can actually move around the tile grid. That means implementing proper screen-to-tile coordinate conversion and basic collision detection. Once I have a few different entity types (player, doors, containers), that&rsquo;s when I&rsquo;ll bring in ECS properly.</p>
+<p>One step at a time.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    </main>
+</body>
+</html>

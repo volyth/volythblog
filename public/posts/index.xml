@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Volyth</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/volythblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hraal - Day One: Project Structure and Tiled Integration</title>
+      <link>http://localhost:1313/volythblog/posts/20251108/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/volythblog/posts/20251108/</guid>
+      <description>&lt;p&gt;The rebuild begins. After setting up the foundation in the last post, I spent my first real development session getting the project structured and Tiled maps rendering. No more hardcoded level generation - we&amp;rsquo;re doing this properly.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Project Structure&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;I kept it simple to start:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hraal/&#xD;&#xA;├── Hraal.sln&#xD;&#xA;├── Hraal.Engine/          # Class library - engine code&#xD;&#xA;│   └── Hraal.Engine.csproj&#xD;&#xA;└── Hraal.Game/            # MonoGame project - the actual game&#xD;&#xA;    └── Hraal.Game.csproj&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The engine is just a .NET class library that references MonoGame as a NuGet package. The game project references the engine and runs the actual application. This separation is critical - it means engine systems stay independent of game logic. When I inevitably need to refactor how rendering works, I&amp;rsquo;m not touching game code. When I&amp;rsquo;m prototyping game mechanics, I&amp;rsquo;m not accidentally breaking core engine systems.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Rebuilding Hraal</title>
       <link>http://localhost:1313/volythblog/posts/first-post/</link>
