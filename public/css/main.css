@@ -124,22 +124,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Code block improvements - but NOT the logo */
-.content pre,
-article pre {
-    width: 100%;
-    max-width: 100%;
+/* Code block improvements */
+pre {
+    max-width: 700px;
     overflow-x: auto;
     padding: 1rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
     background-color: #1a1a1a;
     border: 1px solid #333333;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
-.content pre code,
-article pre code {
+pre code {
     background-color: transparent;
     padding: 0;
 }
@@ -151,7 +147,13 @@ code {
     font-family: monospace;
 }
 
-/* Mobile improvements */
+@media (max-width: 900px) {
+    .logo pre {
+        font-size: 1.8vw;
+        transform: scale(0.95);
+    }
+}
+
 @media (max-width: 600px) {
     body {
         padding: 0 4%;
@@ -170,19 +172,15 @@ code {
         padding: 5px 10px;
     }
     
-    .content pre,
-    article pre {
-        font-size: 11px;
-        padding: 0.5rem;
-        overflow-x: scroll;
+    pre {
+        font-size: 12px;
+        padding: 0.75rem;
+        overflow-x: auto;
     }
     
-    .post-images img,
-    figure img,
-    .content img,
-    article img {
-        max-width: 100% !important;
-        height: auto !important;
+    .post-images img {
+        max-width: 100%;
+        height: auto;
     }
     
     figure {
