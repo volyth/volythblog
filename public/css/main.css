@@ -104,6 +104,22 @@ a:hover {
     margin-top: 5px;
 }
 
+/* Ensure all images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    max-width: 100%;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .footer {
     margin-top: 40px;
     padding: 20px 0;
@@ -152,6 +168,12 @@ code {
         font-size: 1.8vw;
         transform: scale(0.95);
     }
+    
+    /* Scale images on medium screens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 600px) {
@@ -176,6 +198,8 @@ code {
         font-size: 12px;
         padding: 0.75rem;
         overflow-x: auto;
+        max-width: 100%;
+        margin: 1rem 0;
     }
     
     .post-images img {
@@ -185,5 +209,10 @@ code {
     
     figure {
         margin: 1rem 0;
+    }
+    
+    figure img {
+        max-width: 100%;
+        height: auto;
     }
 }
